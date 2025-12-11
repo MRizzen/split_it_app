@@ -10,10 +10,11 @@
 
     <FrameLayout
 
+        android:id="@+id/frameLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintBottom_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -21,26 +22,20 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
-        android:layout_width="416dp"
-        android:layout_height="91dp"
+        android:layout_width="415dp"
+        android:layout_height="83dp"
         android:background="#404145"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="#FBFFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/button_nav_menu" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="420dp"
-        android:layout_height="725dp"
-        app:srcCompat="@drawable/separators"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-7dp" />
-
-    <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="93dp"
-        android:layout_height="82dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:rotationX="51"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,18 +45,26 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo_big" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="402dp"
+        android:layout_height="710dp"
+        app:srcCompat="@drawable/separators"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="5dp" />
+
     <Button
-        android:id="@+id/button3"
-        android:layout_width="67dp"
-        android:layout_height="52dp"
-        android:textColorLink="#FFFFFF"
+        android:id="@+id/button14"
+        android:layout_width="64dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#4BF8F8F8"
         app:icon="@drawable/add_logo"
-        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintHorizontal_bias="0.893"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.84" />
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.818" />
 
     <TextView
         android:id="@+id/textView2"
@@ -75,4 +78,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
