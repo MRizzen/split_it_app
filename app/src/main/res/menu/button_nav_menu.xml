@@ -5,9 +5,6 @@
         android:icon="@drawable/home_logo"
         android:id="@+id/home" />
 
-    <item android:title="Account"
-        android:icon="@drawable/account_logo"
-        android:id="@+id/account"/>
 
     <item android:title="Settings"
         android:icon="@drawable/settings_logo"
